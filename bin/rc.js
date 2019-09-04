@@ -323,8 +323,8 @@ function parseCommandArgs(context, options) {
     } else {
         context.args.kernel = [
             (process.platform === "win32") ?
-                "jp-coffee-kernel.cmd" :
-                "jp-coffee-kernel",
+                "jp-willet-kernel.cmd" :
+                "jp-willet-kernel",
         ].concat(context.args.kernel);
     }
 
@@ -510,7 +510,7 @@ function setProtocol(context) {
             context.args.kernel.join("', '")
         ));
     } else if (context.args.frontend[1] === "console") {
-        context.args.frontend.push("--kernel=coffeescript");
+        context.args.frontend.push("--kernel=willet");
     }
 
     if (context.frontend.majorVersion < 3 &&
@@ -536,15 +536,15 @@ function installKernelAsync(context, callback) {
 
     // Create temporary spec folder
     var tmpdir = makeTmpdir();
-    var specDir = path.join(tmpdir, "coffeescript");
+    var specDir = path.join(tmpdir, "willet");
     fs.mkdirSync(specDir);
 
     // Create spec file
     var specFile = path.join(specDir, "kernel.json");
     var spec = {
         argv: context.args.kernel,
-        display_name: "CoffeeScript (Node.js)",
-        language: "coffeescript",
+        display_name: "Willet (Node.js)",
+        language: "willet",
     };
     fs.writeFileSync(specFile, JSON.stringify(spec));
 

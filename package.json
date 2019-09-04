@@ -1,7 +1,7 @@
 {
-    "name": "jp-coffeescript",
+    "name": "jp-willet",
     "version": "2.0.0",
-    "description": "jp-CoffeeScript is a CoffeeScript kernel for the Jupyter notebook",
+    "description": "jp-Willet is a Willet kernel for the Jupyter notebook",
     "keywords": [
         "coffeescript",
         "kernel",
@@ -13,24 +13,23 @@
     },
     "license": "BSD-3-Clause",
     "author": {
-        "name": "Nicolas Riesco",
-        "email": "enquiries@nicolasriesco.net",
-        "url": "http://www.nicolasriesco.net/"
+        "name": "Jason Gilman",
+        "email": "jason.gilman@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/n-riesco/jp-coffeescript.git"
+        "url": "https://github.com/jasongilman/jp-willet.git"
     },
     "bin": {
-        "jp-coffee": "bin/jp-coffeescript.js",
-        "jp-coffee-console": "bin/jp-coffeescript-console.js",
-        "jp-coffee-install": "bin/jp-coffeescript-install.js",
-        "jp-coffee-notebook": "bin/jp-coffeescript-notebook.js",
-        "jp-coffee-kernel": "lib/kernel.js"
+        "jp-willet": "bin/jp-willet.js",
+        "jp-willet-console": "bin/jp-willet-console.js",
+        "jp-willet-install": "bin/jp-willet-install.js",
+        "jp-willet-notebook": "bin/jp-willet-notebook.js",
+        "jp-willet-kernel": "lib/kernel.js"
     },
     "dependencies": {
-        "coffeescript": "2",
-        "jp-kernel": "1"
+        "jp-kernel": "1",
+        "lodash": "^4.17.15"
     },
     "devDependencies": {
         "debug": "2",
