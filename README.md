@@ -1,8 +1,11 @@
-# jp-CoffeeScript: A CoffeeScript Kernel for the Jupyter Notebook
+# jp-Willet: A Willet Kernel for the Jupyter Notebook
 
-jp-CoffeeScript is an [`npm` package](https://www.npmjs.com/) that implements a
-CoffeeScript kernel for the [Jupyter notebook](http://jupyter.org/)). A Jupyter
-notebook combines the creation of rich-text documents (including equations,
+jp-Willet is an [`npm` package](https://www.npmjs.com/) that implements a
+Willet kernel for the [Jupyter notebook](http://jupyter.org/)). It is a fork of jp-Coffeescript.
+
+Original jp-CoffeeScript documentation:
+
+A Jupyter notebook combines the creation of rich-text documents (including equations,
 plots and videos) with the execution of code in a number of programming
 languages.
 
